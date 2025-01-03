@@ -19,6 +19,8 @@ dependencies {
     // slf4j simple
     testImplementation 'org.slf4j:slf4j-simple:2.0.9'
 
+    implementation 'ch.qos.logback:logback-classic:1.4.11'
+
 }
 
 test {
