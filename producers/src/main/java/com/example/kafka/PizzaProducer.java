@@ -104,6 +104,9 @@ public class PizzaProducer {
         // value serializer 객체 타입을 설정
         props.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
+        // acks 설정
+//        props.setProperty(ProducerConfig.ACKS_CONFIG, "0");
+
         // KafkaProducer 객체 생성
         KafkaProducer<String, String> kafkaProducer = new KafkaProducer<>(props); // 환경 설정을 해당 카프카 프로듀서가 반영
 
